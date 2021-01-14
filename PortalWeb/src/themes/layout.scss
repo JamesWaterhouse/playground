@@ -1,0 +1,154 @@
+html {
+	min-height: 100%;
+	display: flex;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito Sans";
+	font-size: 12px;
+	flex: 1;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+.app {
+	display: grid;
+	min-height: 100%;
+	grid-template-columns: 500px auto;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "venue-header venue-hero" "bowimi-panel venue-hero" "footer venue-hero";
+}
+
+.venue-header {
+	display: grid;
+	position: relative;
+	min-width: 300px;
+
+	.venue-logo {
+		margin-top: 30px;
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		border: 5px solid white;
+		justify-self: center;
+	}
+}
+
+.venue-hero {
+	grid-area: venue-hero;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.bowimi-panel {
+	grid-area: bowimi-panel;
+	text-align: center;
+	background-color: white;
+	padding: 0px 20px 20px 20px;
+	min-width: 300px;
+}
+
+
+.spinner-overlay {
+	position: fixed;
+	left: 0;
+	width: 500px;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 100;
+}
+
+.spinner-overlay-text {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 50%;
+	margin-bottom: 80px;
+	font-size: 2rem;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+	grid-area: footer;
+	background-color: black;
+	color: white;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 20px 20px 5px 20px;
+	text-align: center;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightgray;
+	}
+
+	.app {
+		grid-template-columns: auto;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: "venue-header" "bowimi-panel" "footer";
+		background-color: lightgray;
+	}
+
+	.venue-header {
+		justify-self: stretch;
+		margin: 0px 20px;
+
+		&::before {
+			content: "";
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			display: block;
+			position: absolute;
+			height: 70px;
+			background-color: white;
+			border-radius: 30px 30px 0px 0px;
+		}
+
+		.venue-logo {
+			margin-top: 10px;
+			z-index: 1;
+		}
+	}
+
+	.venue-hero {
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		z-index: 0;
+	}
+
+	.sms {
+		margin-top: 40px;
+	}
+
+	.bowimi-panel {
+		justify-self: stretch;
+		margin: 0px 20px;
+		z-index: 1;
+	}
+
+	.terms {
+		max-height: 230px;
+	}
+
+	.spinner-overlay {
+		right: 0px;
+		width: unset;
+	}
+}

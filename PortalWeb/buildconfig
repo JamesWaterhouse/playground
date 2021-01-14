@@ -1,0 +1,7 @@
+[vue-cli-service build]
+out: dist/*
+public/*
+src/*
+babel.config.js
+package.json
+vue.config.js

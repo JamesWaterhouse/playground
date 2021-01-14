@@ -1,0 +1,346 @@
+$brand-color: #cfb272;
+$field-colour: #f1f0f0;
+$field-border-radius: 6px;
+
+
+@import "fonts.scss";
+@import "layout.scss";
+@import "footer.scss";
+@import "modal.scss";
+@import "phonenumber.scss";
+@import "forms.scss";
+
+
+/* Generic */
+
+input {
+	font-family: "Nunito Sans";
+    font-size: 14px;
+}
+
+.button {
+	width: 100%;
+	border-radius: 25px;
+	padding: 10px;
+	background-color: $brand-color;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	border: none;
+	height: 50px;
+	cursor: pointer;
+}
+
+.button:focus {
+	outline: none;
+	border: 2px solid black;
+}
+
+.button:disabled {
+	background-color: gray;
+}
+
+.welcome {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.strapline {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #666361;
+	margin-bottom: 20px;
+}
+
+.text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	color: #666361;
+	margin-bottom: 20px;
+}
+
+
+.brackets {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.user-messages {
+	min-height: 2rem;
+}
+
+.user-message {
+	text-align: center;
+	color: red;
+}
+
+/* Terms & Conditions Page */
+
+.terms {
+	margin: 20px auto;
+	border: 1px solid black;
+	padding: 8px;
+	max-height: 450px;
+	overflow: auto;
+}
+
+/* SignUp Page */
+
+.signup-page {
+	text-align: center;
+	width: 100%;
+}
+
+.mask {
+	background-color: black;
+	opacity: 0.75;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	visibility: visible;
+	z-index: 1;
+}
+
+u {
+	cursor: pointer;
+}
+
+.termsLink {
+	margin-top: 10px;
+}
+
+.terms-auto-clause {
+	margin: 10px;
+}
+
+.countryCode {
+	width: 60px;
+	max-width: 20%;
+	height: 100%;
+	border: none;
+	background: none;
+	color: #7a7876;
+}
+
+.numberInput {
+	width: 80%;
+	padding: 10px;
+	height: 100%;
+	border: none;
+	background: none;
+	color: #7a7876;
+}
+
+.bottom-links {
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.no-thanks {
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+/* Email Page */
+
+.email-page {
+	text-align: center;
+	width: 100%;
+}
+
+.email {
+	width: 100%;
+	background: #f1f0f0;
+	border-radius: 6px;
+	height: 50px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	border: none;
+	margin-top: -20px;
+}
+
+.checkboxes {
+	margin-bottom: 20px;
+}
+
+.offers {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.checkbox {
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.offers-text {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+/* No Vouchers Page */
+
+.check-again {
+	margin-top: 100px;
+	width: 60%;
+	background-color: #D0CFCF;
+	color: white;
+}
+
+/* SignUp Confirm Page */
+
+.phone-confirm {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #407ec9;
+	padding-bottom: 30px;
+	margin-top: -5px;
+}
+
+.go-back {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Connected Page */
+
+.connected-page {
+	text-align: center;
+}
+
+.tick {
+	height: 50px;
+	margin-top: 50px;
+}
+
+/* Complete Profile Page */
+
+.complete-profile-page {
+	text-align: center;
+
+}
+
+.profile-form {
+	background-color: #f1f0f0;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 20px;
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	color: darkgray;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.placeholder {
+	opacity: 1;
+	pointer-events: none;
+	color: #7a7876;
+	text-align: left;
+}
+
+.input {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: left;
+	opacity: 0;
+	z-index: 10;
+	-webkit-appearance: none;
+	 -moz-appearance: none;
+	 color: #7a7876;
+}
+
+.skipOrYes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skip {
+	flex: 1;
+	background-color: #D0CFCF;
+	color: white;
+	margin-right: 5px;
+}
+
+.yes {
+	flex: 3;
+}
+
+.brandColor {
+	background-color: $brand-color;
+}
+
+.spinner {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -50px;
+	-webkit-animation: spin 1.4s infinite linear;
+	animation: spin 1.4s infinite linear;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+

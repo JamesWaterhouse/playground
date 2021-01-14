@@ -1,0 +1,82 @@
+.phone-number {
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	grid-template-areas: "country-code drop number";
+	align-items: center;
+	justify-items: left;
+	background-color: $field-colour;
+	font-size: 14px;
+	height: 50px;
+	border-radius: 6px;	
+
+	&.--open {
+		border-radius: 6px 6px 0px 0px;
+	}
+
+	.__selected-dialling {
+		width: 70px;
+		text-align: right;
+		cursor: default;
+	}
+
+	.__dropdown-arrow {
+		padding: 0px 10px;
+		cursor: default;
+		font-weight: bold;
+
+		svg {
+			margin-top: 4px;
+			height: 14px;
+		}
+	}
+
+	.__number {
+		border-style: none;
+		background: none;
+		height: 100%;
+		width: 100%;
+		padding: 0px 15px;
+		
+	}
+
+	.__dropdown {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 100%;
+		overflow-y: scroll;
+		background-color: lightgray;
+		max-height: 200px;
+		padding: 0px 5px;
+		display: block;
+		border-radius: 0px 0px 6px 6px;
+		cursor: default;
+	}
+
+	.__list {
+		display: table;
+		text-align: left;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	.__country {
+		display: table-row;
+
+		&:hover {
+			background-color: #ffffff;
+		}
+	}
+
+	.__country-dialling {
+		display: table-cell;
+		text-align: right;
+		padding: 10px 5px;
+	}
+
+	.__country-name {
+		display: table-cell;
+		padding: 10px 5px;
+	}
+}

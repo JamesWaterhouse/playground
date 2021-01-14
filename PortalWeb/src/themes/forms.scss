@@ -1,0 +1,96 @@
+
+.field-input {
+	background-color: $field-colour;
+	border-bottom: 1px solid darkgray;
+
+	&:first-child {
+		border-top-left-radius: $field-border-radius;
+		border-top-right-radius: $field-border-radius;
+	}
+
+	&:last-child {
+		border-bottom-left-radius: $field-border-radius;
+		border-bottom-right-radius: $field-border-radius;
+		border-bottom-style: none;
+	}
+
+	.--placeholder {
+		color: grey;
+	}
+}
+
+.date-input {
+	display: grid;
+	grid-template-areas: "main";
+	align-items: center;
+	justify-items: stretch;
+	position: relative;
+
+	input {
+		grid-area: main;
+		display: block;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		pointer-events: none;
+		appearance: none;
+		border-style: none;
+	}
+
+	label {
+		grid-area: main;
+		display: block;
+		text-align: left;
+		line-height: 50px;
+		padding: 0px 15px;
+	}
+}
+
+.text-input {
+	display: grid;
+	grid-template-areas: "main";
+	align-items: center;
+	justify-items: stretch;
+	position: relative;
+
+	input {
+		grid-area: main;
+		display: block;
+		line-height: 50px;
+		padding: 0px 15px;
+		border-style: none;
+		background: none;
+	}
+
+	label {
+		grid-area: main;
+		display: block;
+		text-align: left;
+		line-height: 50px;
+		padding: 0px 15px;
+	}
+}
+
+.dropdown-input {
+	display: grid;
+	grid-template-areas: "main";
+	align-items: center;
+	justify-items: stretch;
+	position: relative;
+
+	select {
+		grid-area: main;
+		display: block;
+		height: 100%;
+		opacity: 0;
+	}
+
+	label {
+		grid-area: main;
+		display: block;
+		text-align: left;
+		line-height: 50px;
+		padding: 0px 15px;
+		pointer-events: none;
+	}
+}

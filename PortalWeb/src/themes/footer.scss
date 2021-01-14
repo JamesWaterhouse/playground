@@ -1,0 +1,54 @@
+
+.VueCarousel {
+	max-height: 100%;
+	min-height: 100%;
+}
+
+.VueCarousel-wrapper {
+	min-height: 100%;
+}
+
+.footer-title {
+	margin-bottom: 10px;
+	font-size: 15px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wifiLogo {
+	height: 15px;
+	margin-right: 5px;
+}
+
+.bowimiLogo {
+	margin-left: 5px;
+	height: 10px;
+}
+
+.footer-content {
+	width: 80%;
+	margin: auto;
+	font-size: 85%;
+}
+
+.VueCarousel-dot-container {
+	display: inline !important;
+	bottom: 0px;
+}
+
+.VueCarousel-slide {
+	max-height: 100%;
+}
+
+.VueCarousel-pagination {
+	height: min-content;
+	margin: 20px 0px;
+	display: block !important;
+}
+
+.VueCarousel-dot {
+	margin-top: 0px !important;
+	padding: 0 5px !important;
+}

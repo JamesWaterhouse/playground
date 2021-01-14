@@ -1,0 +1,5 @@
+.buildifchanged
+bin
+dist
+node_modules
+obj
